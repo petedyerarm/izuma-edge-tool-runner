@@ -21,7 +21,7 @@ docker run --rm -v <path_to_manifest_tool_folder>:/work -it izuma-edge-tool-runn
 OR
 
 ```
-docker run --rm -v "${PWD}":/work izuma-edge-tool-runner edge-tool "$@"
+docker run --rm -v "${PWD}":/work izuma-edge-tool-runner edge_tool.py "$@"
 ```
 
 

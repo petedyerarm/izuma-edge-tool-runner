@@ -6,5 +6,6 @@ RUN mkdir /builder
 WORKDIR /builder
 RUN git clone http://github.com/PelionIoT/mbed-edge
 RUN cd mbed-edge/edge-tool && pip install -r requirements.txt
-
+ENV PATH="${PATH}:/builder/mbed-edge/edge-tool"
+WORKDIR /work
 
